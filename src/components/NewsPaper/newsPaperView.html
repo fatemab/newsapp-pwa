@@ -1,0 +1,8 @@
+<div class="pageDiv">
+    <div class="grid-container">
+        <div class="grid-item" ng-repeat="type in newsPaper" ng-click="openNewsPaper(type.name)">
+            <img ng-src="{{type.icon}}">
+            <p>{{type.name}}</p>
+        </div>
+    </div>
+</div>

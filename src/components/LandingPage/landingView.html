@@ -1,0 +1,9 @@
+<div class="pageDiv">
+    <div class="container" ng-repeat="news in articles" ng-click="openNewsDetail(news.title)">
+        <img class="container-img" src="{{news.urlToImage}}" alt="news">
+        <div class="bottom-left">{{news.title}}</div>
+        <div class="top-right">
+            <img src="img/Author.png"> <span>{{news.author}}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="introDiv">
+    <div style=" float: right; margin: 20px 20px 0 0; color: white">
+        <button style="background-color: transparent;border: none; color: white" ng-click="goToLandingPage()">SKIP > </button>
+    </div>
+
+    <div class="help-page" ng-show="showHelp==1" ng-swipe-left="showHelp=2">
+        <img src="img/Help_1.png"/>
+        <div>
+            <h3>Lorem ipsum dolor sit </h3>
+            <p style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul class="pagination">
+                <li class="active"></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="help-page" ng-show="showHelp==2" ng-swipe-right="showHelp=1" ng-swipe-left="goToLandingPage()">
+        <img src="img/Help_2.png"/>
+        <div>
+            <h3>Ut enim ad minim veniam</h3>
+            <p style="margin-top: 20px;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <ul class="pagination">
+                <li></li>
+                <li class="active"></li>
+            </ul>
+        </div>
+    </div>
+
+</div>

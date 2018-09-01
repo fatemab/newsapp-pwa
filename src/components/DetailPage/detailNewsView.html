@@ -1,0 +1,27 @@
+<div class="pageDiv">
+    <div class="container">
+        <img src="{{article.urlToImage}}" alt="news" style="width:100%; height: 220px;">
+        <div class="bottom-left">{{article.title}}</div>
+    </div>
+
+    <div style="height:70px; text-align: center ; margin: 2px 0px">
+        <div style="width:32%; height:100%; float: left; background-color: #ededed; margin: 0 0 0 1%;">
+            <p>Author</p>
+            <p style="font-weight: 700">{{article.author}}</p>
+        </div>
+        <div style="width:32%; height:100%; float: left; background-color: #ededed; margin: 0 1% 0;">
+            <p>Published Date</p>
+            <p style="font-weight: 700">{{article.publishedAt}}</p>
+        </div>
+        <div style="width:32%;height:100%; float: left; background-color: #ededed; margin: 0 1% 0 0;">
+            <p>Source</p>
+            <img src="img/Web.png" style="font-weight: 700">
+        </div>
+    </div>
+
+    <div style="margin: 15px">
+        <p style="font-weight: bold; font-size: 20px"> {{article.title}}</p>
+        <p> {{article.description}}</p>
+    </div>
+</div>
+
